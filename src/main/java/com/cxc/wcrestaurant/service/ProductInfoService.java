@@ -1,10 +1,9 @@
 package com.cxc.wcrestaurant.service;
 
 import com.cxc.wcrestaurant.dataobject.ProductInfo;
+import com.cxc.wcrestaurant.dto.CartDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.JpaRepository;
-import sun.plugin.perf.PluginRollup;
 
 import java.util.List;
 
@@ -18,4 +17,10 @@ public interface ProductInfoService {
     List<ProductInfo> findAllUp();
 
     ProductInfo save(ProductInfo productInfo);
+
+    //    增库存
+    void increaseStock(List<CartDTO> cartDTOList);
+
+    //    扣库存
+    void decreaseStock(List<CartDTO> cartDTOList);
 }

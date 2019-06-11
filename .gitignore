@@ -1,6 +1,8 @@
 /target/
 !.mvn/wrapper/maven-wrapper.jar
 
+mvn*
+
 ### STS ###
 .apt_generated
 .classpath
@@ -28,7 +30,7 @@
 .vscode/
 
 ### cxc
-/doc/
+/ref/
 /log/
 
 # Compiled class file
